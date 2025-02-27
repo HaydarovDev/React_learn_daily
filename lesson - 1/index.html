@@ -19,15 +19,21 @@
     <script type="text/babel">
       const App = () => {
         const str = "welcome to my react website!";
-        const addSmth = () => {
-          console.log(true);
-        };
+        // const addSmth = () => {
+        //   console.log(true);
+        // };
         let counter = 0;
         return (
           <div className="section">
             <h1>{str.toUpperCase()}</h1>
             <p>today is : {new Date().toDateString()}</p>
-            <button onClick={addSmth}>{counter}</button>
+            <button
+              onClick={() => {
+                console.log(true);
+              }}
+            >
+              {counter}
+            </button>
           </div>
         );
       };
